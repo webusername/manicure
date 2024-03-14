@@ -1,14 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+
+  <title>Manicure - Landing page</title>
 </head>
+
 <body>
-  
+
+  <header class="header">
+    <div class="container flex header__wrapper">
+      <div class="header__logo flex">
+        <a class="header__logo-lp">Landing Page</a>
+        <a class="header__logo-link" href="#top">Наверх</a>
+      </div>
+      <nav class="nav">
+        <div class="nav__title">Меню:</div>
+        <div class="nav__wrapper flex">
+          <ul class="nav__list list-reset flex">
+            <li class="nav__item">
+              <a class="link nav__link" href="#about">О салоне</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#slider">Виды маникюра</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#gallery">Наша работа</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#answers">Вопрос — ответ</a>
+            </li>
+          </ul>
+          <a class="nav__link nav__btn btn" href="#footer">К форме</a>
+        </div>
+        <div class="social__icons nav__social flex">
+          <a class="social__link flex" href="https://vk.com" target="_blank">
+            <img class="social__img vk" src="./assets/img/svg/vk.svg" alt="Вконтакте">
+          </a>
+          <a class="social__link flex" href="https://t.me" target="_blank">
+            <img class="social__img tg" src="./assets/img/svg/tg.svg" alt="Телеграм">
+          </a>
+        </div>
+      </nav>
+      <div class="burger">
+        <div class="burger__wrapper">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="intro">
+      <div class="container intro__container grid">
+        <div class="intro__greating">
+          <h1 class="greating__title">Добро пожаловать в салон красоты <span class="greating__title-span">Beauty
+              Manicure</span>
+          </h1>
+          <p class="greating__desc">
+            В&nbsp;любом варианте дизайна френч на&nbsp;ногтях в&nbsp;2024 году добавит яркость и&nbsp;элегантность
+            всему образу за&nbsp;счёт глубокого тёмного тона.
+          </p>
+        </div>
+        <div class="intro__pic grid">
+          <div class="pic__wrapper">
+            <img class="intro__pic-img" src="./assets/img/intro-img1.jpg" alt="Изображение">
+          </div>
+          <div class="pic__wrapper">
+            <img class="intro__pic-img" src="./assets/img/intro-img2.jpg" alt="Изображение">
+          </div>
+          <div class="pic__wrapper">
+            <img class="intro__pic-img" src="./assets/img/intro-img3.jpg" alt="Изображение">
+          </div>
+        </div>
+        <div class="greating__show-scroll flex">
+          <p class="show-scroll__text">Запись на март <span class="show-scroll__text-span">открыта</span></p>
+          <a class="btn show-scroll__btn" href="#footer">Записаться</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
