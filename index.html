@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -224,8 +229,175 @@
       </div>
     </section>
 
+    <section class="gallery" id="gallery">
+      <div class="container gallery__container flex">
+        <h2 class="visually-hidden">Галерея</h2>
+        <div class="gallery__wrapper">
+          <img class="gallery__img" src="./assets/img/gallery/img1.jpg" alt="pic1">
+        </div>
+        <div class="gallery__thumbs flex">
+          <div class="thumbs__slide active flex">
+            <img class="thumbs__img" src="./assets/img/gallery/img1.jpg" alt="thumb1">
+            <h3 class="thumbs__desc">Картинка 1</h3>
+          </div>
+          <div class="thumbs__slide flex">
+            <img class="thumbs__img" src="./assets/img/gallery/img2.jpg" alt="thumb2">
+            <h3 class="thumbs__desc">Картинка 2</h3>
+          </div>
+          <div class="thumbs__slide flex">
+            <img class="thumbs__img" src="./assets/img/gallery/img3.jpg" alt="thumb3">
+            <h3 class="thumbs__desc">Картинка 3</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="answers" id="answers">
+      <div class="container">
+        <h2 class="title answers__title">Ответы на вопросы</h2>
+        <div class="accordion">
+          <div class="accordion-content">
+            <div class="accordion-content__header">
+              <span class="accordion-content__title">Какую пилочку выбрать для натуральных ногтей?</span>
+              <div class="accordion-content__btn">
+                <svg class="btn__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.5148 10C0.514799 9.44772 0.962515 9 1.5148 9L9.00008 9L9.00008 1.51472C9.00008 0.962434 9.4478 0.514719 10.0001 0.514719C10.5524 0.514719 11.0001 0.962434 11.0001 1.51472L11.0001 9H18.4854C19.0376 9 19.4854 9.44772 19.4854 10C19.4854 10.5523 19.0376 11 18.4854 11H11.0001L11.0001 18.4853C11.0001 19.0376 10.5524 19.4853 10.0001 19.4853C9.4478 19.4853 9.00008 19.0376 9.00008 18.4853L9.00008 11L1.5148 11C0.962515 11 0.514799 10.5523 0.5148 10Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="accordion-content__answer">
+              <p class="answer__text">
+                Главное&nbsp;&mdash; это абразивность пилочки. Для натуральных ногтей выбирайте пилочку
+                с&nbsp;абразивностью от&nbsp;180&nbsp;грит. Пилочка не&nbsp;должна быть слишком жесткой, это приведет
+                к&nbsp;расслоению ногтевой пластины. При этом неважно, из&nbsp;какого она материала: стеклянная,
+                металлическая, алмазная, керамическая или бумажная.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content__header">
+              <span class="accordion-content__title">Как должны обрабатываться маникюрные инструменты?</span>
+              <div class="accordion-content__btn">
+                <svg class="btn__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.5148 10C0.514799 9.44772 0.962515 9 1.5148 9L9.00008 9L9.00008 1.51472C9.00008 0.962434 9.4478 0.514719 10.0001 0.514719C10.5524 0.514719 11.0001 0.962434 11.0001 1.51472L11.0001 9H18.4854C19.0376 9 19.4854 9.44772 19.4854 10C19.4854 10.5523 19.0376 11 18.4854 11H11.0001L11.0001 18.4853C11.0001 19.0376 10.5524 19.4853 10.0001 19.4853C9.4478 19.4853 9.00008 19.0376 9.00008 18.4853L9.00008 11L1.5148 11C0.962515 11 0.514799 10.5523 0.5148 10Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="accordion-content__answer">
+              <p class="answer__text">
+                В&nbsp;3&nbsp;этапа: сначала дезинфекция в&nbsp;специальном растворе в&nbsp;течение 60&nbsp;минут. Затем
+                санитарная обработка: инструменты тщательно промываются под проточной водой с&nbsp;щеточкой. После
+                полного высыхания инструменты помещаются в&nbsp;крафт-пакеты либо металлические емкости
+                и&nbsp;затем&nbsp;&mdash; в&nbsp;сухожар или автоклав для стерилизации. Вскрывается пакет в&nbsp;вашем
+                присутствии. Неважно, посещаете вы&nbsp;салон или у&nbsp;вас свой частный мастер, все этапы дезинфекции
+                и&nbsp;стерилизации должны соблюдаться.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content__header">
+              <span class="accordion-content__title">Как правильно снять гель-лак самой?</span>
+              <div class="accordion-content__btn">
+                <svg class="btn__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.5148 10C0.514799 9.44772 0.962515 9 1.5148 9L9.00008 9L9.00008 1.51472C9.00008 0.962434 9.4478 0.514719 10.0001 0.514719C10.5524 0.514719 11.0001 0.962434 11.0001 1.51472L11.0001 9H18.4854C19.0376 9 19.4854 9.44772 19.4854 10C19.4854 10.5523 19.0376 11 18.4854 11H11.0001L11.0001 18.4853C11.0001 19.0376 10.5524 19.4853 10.0001 19.4853C9.4478 19.4853 9.00008 19.0376 9.00008 18.4853L9.00008 11L1.5148 11C0.962515 11 0.514799 10.5523 0.5148 10Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="accordion-content__answer">
+              <p class="answer__text">
+                Я&nbsp;рекомендую обращаться к&nbsp;мастеру: в&nbsp;домашних условиях есть опасность травмировать
+                ноготки.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-content">
+            <div class="accordion-content__header">
+              <span class="accordion-content__title">Для чего нужна коррекция?</span>
+              <div class="accordion-content__btn">
+                <svg class="btn__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.5148 10C0.514799 9.44772 0.962515 9 1.5148 9L9.00008 9L9.00008 1.51472C9.00008 0.962434 9.4478 0.514719 10.0001 0.514719C10.5524 0.514719 11.0001 0.962434 11.0001 1.51472L11.0001 9H18.4854C19.0376 9 19.4854 9.44772 19.4854 10C19.4854 10.5523 19.0376 11 18.4854 11H11.0001L11.0001 18.4853C11.0001 19.0376 10.5524 19.4853 10.0001 19.4853C9.4478 19.4853 9.00008 19.0376 9.00008 18.4853L9.00008 11L1.5148 11C0.962515 11 0.514799 10.5523 0.5148 10Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="accordion-content__answer">
+              <p class="answer__text">
+                Коррекция&nbsp;&mdash; процедура, необходимая для того, чтобы поддерживать эстетичный вид маникюра
+                в&nbsp;течение максимально длительного времени. Ногтевая пластина постепенно начинает отрастать,
+                и&nbsp;со&nbsp;временем можно заметить границу между кутикулой и&nbsp;местом наложения материала.
+                Во&nbsp;время коррекции мастер аккуратно снимает часть искусственного покрытия, и&nbsp;заполняет
+                свободную полоску отросшего ногтя акрилом или гелем. Затем ногтевая пластина аккуратно выравнивается
+                пилочкой, корректируется длина отрастающих ногтей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__wrapper grid">
+        <div class="footer__header">
+          <h2 class="footer__header-title">Форма ОС</h2>
+          <p class="footer__header-text">
+            Сверстай форму обратной связи. Будет круто, если заявки будут приходить сюда:
+          </p>
+        </div>
+        <div class="footer__form">
+          <form class="form" action="./send.php" method="">
+            <div class="input__wrapper flex">
+              <input class="form__input form__question" type="text" name="question" placeholder="Напиши вопрос*"
+                required>
+              <input class="form__input form__contact" type="text" name="contact" placeholder="Телефон или почта*"
+                required>
+              <input class="form__input form__name" type="text" name="username" placeholder="Твоё имя*" required>
+              <input class="form__input form__social" type="text" name="social" placeholder="Соц.сеть или месенджер">
+            </div>
+            <div class="form__footer flex">
+              <button class="form__btn btn btn-reset" id="form__submit">Отправить заявку</button>
+              <label class="form__input-checked">
+                <input class="form__input form__agree" checked="checked" id="form__checked" type="checkbox"
+                  name="form__checked" onchange="document.getElementById('form__submit').disabled = !this.checked;">
+                <span class="form__agree-custom"></span>
+                Согласие с политикой
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="footer__social">
+          <h3 class="footer__social-title">Не забудь вставить соц.сети</h3>
+          <div class="social__icons flex">
+            <a class="social__link flex" href="https://vk.com" target="_blank">
+              <img class="social__img vk" src="./assets/img/svg/vk.svg" alt="Вконтакте">
+            </a>
+            <a class="social__link flex" href="https://t.me" target="_blank">
+              <img class="social__img tg" src="./assets/img/svg/tg.svg" alt="Телеграм">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/accordion.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
