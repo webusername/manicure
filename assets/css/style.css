@@ -44,6 +44,8 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -65,12 +67,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
   max-width: 100%;
-  height: auto;
-  border-radius: 8px
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 
@@ -419,4 +422,216 @@ img {
 .answers,
 .footer {
   padding: 120px 0;
+}
+
+.slider__container {
+  margin-left: auto;
+  max-width: 1420px;
+}
+
+.slider__item {
+  border: 2px solid var(--main-gray-light);
+  border-radius: 8px;
+}
+
+.slider__header {
+  justify-content: space-between;
+}
+
+.slider__figure {
+  position: relative;
+  max-width: 340px;
+  max-height: 480px;
+}
+
+.slider__img {
+  height: 480px;
+}
+
+.slider__caption {
+  position: absolute;
+  bottom: 0;
+  padding: 12px;
+  max-width: 340px;
+  width: 100%;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main-gray-white);
+  background: var(--main-gray-black);
+}
+
+.slider__item:hover .slider__caption {
+  background: var(--color1-main);
+}
+
+.slider__item:active .slider__caption {
+  background: var(--main-color1-dark);
+}
+
+.slider__item-header {
+  position: absolute;
+  bottom: 0;
+  max-width: 340px;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  background: var(--main-gray-black);
+}
+
+.slider__control {
+  gap: 20px;
+}
+
+.swiper__btn {
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 0 20px 0 rgba(13, 64, 64, 0.1);
+  background: var(--main-gray-white);
+  cursor: pointer;
+}
+
+.swiper__btn:hover {
+  background: var(--main-gray-lighter);
+}
+
+.swiper__btn:active {
+  background: var(--main-gray-light);
+}
+
+.gallery {
+  background: var(--main-gray-lighter);
+}
+
+.gallery__container {
+  flex-wrap: no-wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery__wrapper {
+  min-width: 320px;
+}
+
+
+.gallery__thumbs {
+  flex-direction: column;
+  flex: 1 1 440px;
+  gap: 20px;
+  min-width: 320px;
+}
+
+
+.thumbs__slide {
+  align-items: center;
+  padding: 12px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  max-height: 72px;
+  background: var(--main-gray-white);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.thumbs__slide:hover {
+  border-color: var(--main-gray-light);
+}
+
+.active {
+  border-color: var(--color1-main);
+}
+
+.thumbs__slide:hover {
+  border-color: var(--color1-main);
+}
+
+.thumbs__img {
+  margin-right: 20px;
+  width: 48px;
+  height: 48px;
+}
+
+.thumbs__desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--main-gray-dark);
+}
+
+.answers__title {
+  margin-bottom: 60px;
+}
+
+.accordion-content {
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  min-width: 320px;
+  background: var(--main-gray-lighter);
+  overflow: hidden;
+}
+
+.accordion-content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 12px 24px;
+}
+
+.accordion-content__title {
+  margin-right: 10px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--gray-black);
+}
+
+.accordion-content__header:hover .accordion-content__title {
+  color: var(--color1-main);
+}
+
+.accordion-content__header:active .accordion-content__title {
+  color: var(--main-color1-dark);
+}
+
+.accordion-content__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: var(--color1-main);
+}
+
+.accordion-content__header:hover .accordion-content__btn {
+  background: var(--main-color1-light);
+}
+
+.accordion-content__header:active .accordion-content__btn {
+  background: var(--main-color1-dark);
+}
+
+.btn__svg {
+  transition: all 0.2s ease;
+}
+
+.accordion-content__answer {
+  height: 0;
+  transition: all 0.2s ease;
+}
+
+.answer__text {
+  padding: 12px 12px 36px 24px;
+  font-size: 16px;
+  color: var(--gray-black);
 }
