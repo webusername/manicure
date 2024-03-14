@@ -1,6 +1,6 @@
 $(function () {
 
-  $(".header, .miracle__show-scroll").on("click", "a", function (event) {
+  $(".header, .greating__show-scroll").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
