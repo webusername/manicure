@@ -1,13 +1,23 @@
-$(function () {
+// Скролл и удаление якорей из url
 
-  $(".header, .greating__show-scroll").on("click", "a", function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1500);
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollLinks = document.querySelectorAll(".header a, .greating__show-scroll a");
+
+  scrollLinks.forEach(anchor => {
+    anchor.addEventListener("click", event => {
+      event.preventDefault();
+      let id = anchor.getAttribute('href');
+      let targetElement = document.querySelector(id);
+      let top = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+      window.scrollTo({
+        top: top,
+        behavior: "smooth"
+      });
+    });
   });
-
 });
+
 
 
 // Logo
