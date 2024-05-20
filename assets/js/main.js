@@ -122,4 +122,4 @@ menu.addEventListener('click', function (e) {
     burgerWrapper.classList.remove('active');
     document.body.classList.remove('stop-scroll');
   }
-})
+});

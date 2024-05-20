@@ -824,12 +824,12 @@ img {
   background-position: center;
 }
 
-.form__agree:checked + .form__agree-custom {
+.form__agree:checked+.form__agree-custom {
   background-image: url('../img/svg/checked.svg');
 }
 
 
-.form__agree:checked + .form__input-checked:hover {
+.form__agree:checked+.form__input-checked:hover {
   background-image: url('../img/svg/active.svg');
 }
 
